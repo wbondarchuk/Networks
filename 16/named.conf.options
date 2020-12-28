@@ -1,0 +1,7 @@
+options {
+        directory "/var/cache/bind";
+        listen-on port 53 { localhost; 192.168.11.0/24; };
+        allow-query { localhost; 192.168.11.0/24; };
+        forwarders { 192.168.11.1; };
+        recursion yes;
+};
